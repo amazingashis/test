@@ -8,7 +8,7 @@ import asyncio
 app = Flask(__name__)
 
 async def long_load(typeback):
-    time.sleep(5) #just simulating the waiting period
+    time.sleep(35) #just simulating the waiting period
     return "You typed: %s" % typeback
 
 @app.route('/')
